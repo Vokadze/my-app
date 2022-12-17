@@ -34,18 +34,6 @@ const CountersList = () => {
       setCounters(counters)
    }
 
-   //const handelUpdate = () => {
-   //   const updateState = [
-   //      { id: 0, value: 1, name: "Ненужная вещь", price: '200' },
-   //      { id: 1, value: 2, name: "Ложка" },
-   //      { id: 2, value: 3, name: "Вилка" },
-   //      { id: 3, value: 4, name: "Тарелка" },
-   //      { id: 4, value: 0, name: "Набор минималиста" },
-   //   ]
-   //   setCounters(updateState)
-   //   console.log('handel update');
-   //}
-
    return (
       <>
          {counters.map((count) => (
@@ -60,11 +48,6 @@ const CountersList = () => {
             onClick={handleReset}>
             Сброс
          </button>
-
-         {/*<button className="btn btn-primary btn-sm m-2"
-            onClick={handelUpdate}>
-            Обновить состояние
-         </button>*/}
       </>)
 
 }

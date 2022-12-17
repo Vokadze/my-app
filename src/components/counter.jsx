@@ -1,8 +1,5 @@
 import React, { useState } from "react"
 const Counter = (props) => {
-   //console.log(props);
-
-   //const { value, setValue } = props
    const [value, setValue] = useState(props.value)
 
    const formatValue = () => {
@@ -25,8 +22,6 @@ const Counter = (props) => {
 
    return (
       <div>
-         {/*{props.children}*/}
-
          <span>{props.name}</span>
 
          <span className={getBageClasses()}>{formatValue()}</span>
