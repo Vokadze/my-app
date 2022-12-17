@@ -26,6 +26,14 @@ const CountersList = () => {
       console.log('handle reset');
    }
 
+   const handleIncrement = () => {
+      setCounters(counters)
+   }
+
+   const handleDecrement = () => {
+      setCounters(counters)
+   }
+
    //const handelUpdate = () => {
    //   const updateState = [
    //      { id: 0, value: 1, name: "Ненужная вещь", price: '200' },
@@ -43,11 +51,8 @@ const CountersList = () => {
          {counters.map((count) => (
             <Counter
                key={count.id}
-               //id={count.id}
-               //value={count.value}
-               //name={count.name}
-               //count={count}
                onDelete={handelDelete}
+               onClick={() => (handleIncrement)(handleDecrement)}
                {...count}
             />
          ))}
